@@ -1,0 +1,49 @@
+# Environment and secret files
+.env
+.env.*
+!.env.example
+credentials.json
+service-account*.json
+*.pem
+*.key
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+*.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Local database and state files
+*.sqlite
+*.db
+
+# Large generated datasets and local caches
+# Note: Raw OHLCV, alt-data, and feature parquets are generated via build_dataset.py,
+# altdata.py, and features.py and can exceed GitHub's 100MB file limit.
+data/
+
+# Logs
+*.log
+
+# Dependencies and build artifacts
+node_modules/
+dist/
+build/
+
+# Operating system and IDE metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Scratch directory
+scratch/
